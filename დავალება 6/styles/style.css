@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    position: absolute;
+    left: 50%;
+    font-size: 50px;
+}
+
+.image{
+    width: 500px;
+    margin-top: 200px;
+    position: absolute;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 7;
+    z-index: 0;
+}
+.second{
+    width: 400px;
+    margin-top: 200px;
+    position: absolute;
+    margin-left: 450px;
+    animation-name: secondmove;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 7;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    z-index: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes mymove {
+0% {
+    top: 0;
+    left:0;
+}
+100% {
+    top: 0;
+    left: 20%;
+}
+}
+
+@keyframes secondmove{
+0%{
+    top: 0;
+    right: 0;
+}
+100%{
+    top: 0;
+    right: 20%;
+}
+    
+}
